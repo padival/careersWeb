@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  min-height: 100%; }
+
+body {
+  font-family: "GT Eesti";
+  color: #666666;
+  text-align: left;
+  position: relative;
+  line-height: 1.5;
+  font-weight: 400;
+  transition: 0.3ms; }
+
+.container {
+  padding-top: 112px;
+  padding-bottom: 112px; }
+  @media screen and (max-width: 832px) {
+    .container {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+
+h1,
+h2,
+h3,
+h4,
+.label {
+  font-weight: 500; }
+
+h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 32px;
+  color: #333333; }
+  @media screen and (max-width: 832px) {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 24px;
+      line-height: 1.25; } }
+
+h2 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin: 0; }
+  @media screen and (max-width: 832px) {
+    h2 {
+      font-size: 24px; } }
+
+h4 {
+  font-size: 24px;
+  line-height: 1.25;
+  margin: 0;
+ }
+  @media screen and (max-width: 832px) {
+    h4 {
+      font-size: 20px; } }
+a{
+  color: #666666;
+  text-decoration-line: none;
+}
+a:hover{
+  color: #666666;
+  text-decoration-line: none;
+}
+label {
+  font-size: 16px;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 8px; }
+  label.caps {
+    text-transform: uppercase;
+    margin-bottom: 16px; }
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #666666; }
+  @media screen and (max-width: 832px) {
+    p {
+      font-size: 20px; } }
+
+select {
+  padding: 8px 16px !important;
+  font-size: 20px;
+  -webkit-appearance: none; }
+  @media (min-width: 832px) {
+    select {
+      font-size: 16px; } }
+
+@media (min-width: 832px) {
+  .container .row .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .container .row .col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; } }
+@media screen and (max-width: 831px) {
+  .container .row .col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  .container .row .col-sm-6,
+  .container .row .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .container .row .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+.section {
+  margin-bottom: 96px; }
+  @media screen and (max-width: 832px) {
+    .section {
+      margin-bottom: 80px; } }
+  .section-last {
+    margin-bottom: 0 !important; }
+
+.hero-imgBlock {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+.hero-vector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%; 
+}
+  @media screen and (max-width: 832px) {
+    .hero-vector {
+      position: static;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin: 48px auto 0;
+      display: block; } }
+.hero-main {
+  margin-bottom: 80px; }
+  @media screen and (max-width: 832px) {
+    .hero-main {
+      margin-bottom: 64px; } }
+.hero-filter {
+  display: block; }
+  .hero-filter-block {
+    display: flex;
+    justify-content: center; }
+  .hero-filter-container {
+    display: inline-block;
+    max-width: 240px;
+    width: 100%; }
+    .hero-filter-container:nth-child(1) {
+      margin-right: 32px; }
+
+.category__main {
+  margin-bottom: 64px; }
+  @media screen and (max-width: 832px) {
+    .category__main {
+      margin-bottom: 48px; } }
+  .category__main-title {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 16px; }
+  .category__main-img {
+    height: 40px;
+    display: inline-block;
+  
+     }
+    .category__main-img img {
+      height: 100%;
+      }
+      .category__main-img img:hover{
+        -webkit-transform: scale(1.3);
+	      transform: scale(1.3);
+      }
+.category__sub {
+  margin-bottom: 64px;
+  padding: 24px 0;
+  border-top: 1px solid #666666;
+  position: relative;
+  cursor: pointer; }
+  .category__sub-label {
+    cursor: pointer; }
+  .category__sub:hover {
+    cursor: pointer;
+    border-color: #2d7ff9; }
+    .category__sub:hover:after {
+      border-color: #2d7ff9; }
+  .category__sub:after {
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    top: -4%;
+    right: 0;
+    border-color: transparent; }
+  @media screen and (max-width: 832px) {
+    .category__sub {
+      margin-bottom: 32px; } }
+  .category__sub.marketing:hover {
+    border-color: #fb2b60; }
+    .category__sub.marketing:hover:after {
+      border-color: #fb2b60; }
+      
+
+/*# sourceMappingURL=application-common.css.map */
